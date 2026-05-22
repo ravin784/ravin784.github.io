@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Notary NJ | Visaqkar - Mobile Notary Public Newark</title>
-    <meta name="description" content="Mobile Notary Public based in Newark, NJ. I come to you for notarizations, remote online notary, and I-9 verification. Free consultation.">
+    <title>Mobile Notary NJ | Visaqkar - Pricing & Booking</title>
+    <meta name="description" content="Mobile Notary Public in Newark, NJ. Transparent pricing starting at $40. 24/7 mobile notary, remote online notarization (RON) $25+, I-9 verification $60. Book online.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #333; }
@@ -42,6 +42,27 @@
         .service-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #2563eb; }
         .service-card .number { font-size: 3rem; font-weight: 800; color: #e2e8f0; line-height: 1; margin-bottom: 10px; }
         
+        /* Pricing Section */
+        .pricing-section { background: #f8fafc; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .pricing-card { background: white; border-radius: 15px; padding: 40px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; position: relative; }
+        .pricing-card.featured { border: 2px solid #2563eb; box-shadow: 0 15px 40px rgba(37,99,235,0.15); }
+        .pricing-card h3 { font-size: 1.4rem; color: #1a365d; margin-bottom: 10px; }
+        .price { font-size: 3rem; font-weight: 800; color: #2563eb; margin: 15px 0; }
+        .price small { font-size: 1rem; font-weight: 400; color: #718096; }
+        .pricing-card ul { list-style: none; margin: 20px 0; }
+        .pricing-card li { padding: 8px 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem; }
+        .pricing-card li:last-child { border-bottom: none; }
+        .pricing-card li::before { content: "✓ "; color: #10b981; font-weight: bold; }
+        .pricing-note { background: #fff3cd; border-left: 4px solid #f59e0b; padding: 15px 20px; margin: 30px 0 0; border-radius: 0 10px 10px 0; font-weight: 500; }
+        
+        .additional-fees { background: white; border-radius: 15px; padding: 40px; margin-top: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; }
+        .additional-fees h3 { color: #1a365d; margin-bottom: 20px; font-size: 1.3rem; }
+        .fee-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .fee-item { background: #f8fafc; padding: 20px; border-radius: 10px; text-align: center; }
+        .fee-item .fee-name { font-weight: 600; color: #4a5568; margin-bottom: 8px; }
+        .fee-item .fee-price { font-size: 1.5rem; font-weight: 700; color: #1a365d; }
+        
         /* Booking Section */
         .booking-section { background: #1a365d; color: white; text-align: center; border-radius: 20px; padding: 50px; margin: 60px 0; }
         .booking-section h2 { color: white; }
@@ -59,6 +80,7 @@
             .hero .btn-outline { margin-left: 0; margin-top: 15px; }
             nav .container { flex-direction: column; gap: 15px; }
             .nav-links { gap: 15px; }
+            .pricing-grid, .fee-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -70,6 +92,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#book">Book Now</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -123,7 +146,85 @@
                     <p>Professional Form I-9 verification services for employers who need a trusted, efficient authorized representative.</p>
                 </div>
             </div>
-            <div class="disclaimer">
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2>Pricing and Fees</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 10px;">Operating 24/7</p>
+            <p style="text-align: center; color: #e53e3e; font-weight: 600; margin-bottom: 40px;">Weekends and Holidays are additional $20</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Mobile Notary Public Service</h3>
+                    <div class="price">$40<span style="font-size: 1rem; font-weight: 400; color: #718096;">+</span></div>
+                    <p style="font-size: 0.9rem; color: #718096; margin-top: -10px;">Starting at</p>
+                    <ul>
+                        <li>Notary consultation</li>
+                        <li>Travel to your location</li>
+                        <li>Notarization of one document</li>
+                    </ul>
+                    <p style="font-size: 0.85rem; color: #718096; margin-top: 10px;">Price depends on travel distance</p>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Remote Online Notarization (RON)</h3>
+                    <div class="price">$25<span style="font-size: 1rem; font-weight: 400; color: #718096;">+</span></div>
+                    <p style="font-size: 0.9rem; color: #718096; margin-top: -10px;">Per document</p>
+                    <ul>
+                        <li>Notary consultation</li>
+                        <li>Notarization of one document</li>
+                        <li>Online via Notarize or BlueNotary</li>
+                    </ul>
+                    <p style="font-size: 0.85rem; color: #718096; margin-top: 10px;">Additional platform fees may apply</p>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>I-9 Verification</h3>
+                    <div class="price">$60</div>
+                    <p style="font-size: 0.9rem; color: #718096; margin-top: -10px;">Plus travel fees</p>
+                    <ul>
+                        <li>Professional Form I-9 verification</li>
+                        <li>Authorized representative service</li>
+                        <li>For employers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Fees Breakdown -->
+            <div class="additional-fees">
+                <h3>Additional Fees</h3>
+                <div class="fee-grid">
+                    <div class="fee-item">
+                        <div class="fee-name">Additional Signers</div>
+                        <div class="fee-price">$10</div>
+                        <div style="font-size: 0.85rem; color: #718096;">Per person/per signature</div>
+                    </div>
+                    <div class="fee-item">
+                        <div class="fee-name">Witness Verification</div>
+                        <div class="fee-price">$10</div>
+                        <div style="font-size: 0.85rem; color: #718096;">Per signature</div>
+                    </div>
+                    <div class="fee-item">
+                        <div class="fee-name">Additional RON Doc</div>
+                        <div class="fee-price">$8.00</div>
+                        <div style="font-size: 0.85rem; color: #718096;">Per additional document</div>
+                    </div>
+                    <div class="fee-item">
+                        <div class="fee-name">Additional Notarization</div>
+                        <div class="fee-price">$2.50</div>
+                        <div style="font-size: 0.85rem; color: #718096;">Per additional document</div>
+                    </div>
+                </div>
+                
+                <div class="pricing-note">
+                    <strong>⚠️ Weekends & Holidays:</strong> An additional $20 applies to all services on weekends and holidays.
+                </div>
+            </div>
+            
+            <div class="disclaimer" style="margin-top: 30px;">
                 <strong>Disclaimer:</strong> I am not an attorney licensed to practice law and may not give legal advice about immigration or any other legal matter or accept fees for legal advice.
             </div>
         </div>
@@ -139,7 +240,7 @@
                     <!-- Replace with YOUR Calendly URL after signing up -->
                     <iframe class="calendly-inline-widget" src="https://calendly.com/ravin-ram03/30min" frameborder="0" scrolling="no" title="Schedule Appointment"></iframe>
                 </div>
-                <p style="margin-top: 20px; font-size: 0.9rem;">Prefer to call? Reach me at <strong>(973) 555-1234</strong></p>
+                <p style="margin-top: 20px; font-size: 0.9rem;">Prefer to call? Reach me at <strong>(973) 634-1264</strong></p>
             </div>
         </div>
     </section>
@@ -177,5 +278,7 @@
             });
         });
     </script>
+</body>
+</html>
 </body>
 </html>
